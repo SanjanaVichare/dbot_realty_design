@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ice Blue #F4F7FC */
+    --background: 220 50% 97%;
+    /* Charcoal Navy #1A1A2E */
+    --foreground: 240 27% 14%;
+
+    /* Sky Tint #E0EBFA */
+    --card: 216 73% 93%;
+    --card-foreground: 240 27% 14%;
+
+    /* Ice Blue */
+    --popover: 220 50% 97%;
+    --popover-foreground: 240 27% 14%;
+
+    /* Royal Blue #0E55A5 */
+    --primary: 210 84% 35%;
+    /* Ice Blue for text on primary */
+    --primary-foreground: 220 50% 97%;
+
+    /* Sky Tint #E0EBFA */
+    --secondary: 216 73% 93%;
+    --secondary-foreground: 240 27% 14%;
+
+    /* Sand #F9F3DE */
+    --muted: 45 68% 92%;
+    --muted-foreground: 220 15% 40%;
+
+    /* Forest #56A018 → accent */
+    --accent: 94 73% 36%;
+    /* white on green */
+    --accent-foreground: 220 50% 97%;
+
+    /* Lime Tint #D5F2A0 */
+    --lime-tint: 88 72% 79%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Sky Tint border */
+    --border: 216 40% 88%;
+    --input: 216 40% 88%;
+    --ring: 210 84% 35%;
+
+    --radius: 0.75rem;
+
+    /* Midnight #001240 */
+    --midnight: 220 100% 13%;
+
+    --sidebar-background: 220 50% 97%;
+    --sidebar-foreground: 240 27% 14%;
+    --sidebar-primary: 210 84% 35%;
+    --sidebar-primary-foreground: 220 50% 97%;
+    --sidebar-accent: 216 73% 93%;
+    --sidebar-accent-foreground: 240 27% 14%;
+    --sidebar-border: 216 40% 88%;
+    --sidebar-ring: 210 84% 35%;
+
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
+
+.animate-logo-scroll {
+  animation: logo-scroll 30s linear infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -12px hsl(220 100% 13% / 0.15);
+}
