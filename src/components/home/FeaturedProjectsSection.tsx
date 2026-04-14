@@ -41,13 +41,10 @@ export default function FeaturedProjectsSection() {
 
   return (
     <section className="h-screen snap-start flex items-center overflow-hidden">
-      <div ref={ref} className="w-full px-8 lg:px-16">
+      <div ref={ref} className="w-full px-5 lg:px-16">
 
         {/* Heading */}
-        <div className={`mb-10 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-3">
-            Case Studies
-          </p>
+        <div className={`mb-10 transition-all duration-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <h2 className="text-3xl md:text-4xl font-bold">
             Featured Projects<span className="text-primary">.</span>
           </h2>

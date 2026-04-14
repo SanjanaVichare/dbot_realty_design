@@ -42,7 +42,7 @@ export default function Index() {
         </section>
 
         {/* FEATURED PROJECTS */}
-        <section className="snap-start min-h-screen py-0 flex items-center">
+        <section className="snap-start min-h-screen py-2 flex items-center">
           <FeaturedProjectsSection />
         </section>
 
