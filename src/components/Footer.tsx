@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-14 pt-8 border-t border-primary-foreground/10 text-center">
+        <div className="mt-14 pt-6 border-t border-primary-foreground/10 text-center">
           <p className="text-sm text-primary-foreground/30">© 2026 DBOT Realty. All rights reserved.</p>
         </div>
       </div>

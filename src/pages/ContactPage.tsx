@@ -16,17 +16,17 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-24">
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-6 lg:px-8">
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">Get In Touch</p>
+      <main className="pt-12">
+        <section className="py-6 bg-background">
+          <div className="container mx-auto px-1 lg:px-6">
+            <p className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-1">Get In Touch</p>
             <h1 className="text-5xl md:text-6xl font-heading font-bold text-foreground leading-tight">
               Contact Us<span className="text-accent">.</span>
             </h1>
           </div>
         </section>
 
-        <section className="py-20 bg-secondary/30">
+        <section className="py-10 bg-secondary/30">
           <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Form */}
             <div>
