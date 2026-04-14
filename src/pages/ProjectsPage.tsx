@@ -25,8 +25,8 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-24">
-        <section className="py-20 bg-background">
+      <main className="pt-10">
+        <section className="py-10 bg-background">
           <div className="container mx-auto px-6 lg:px-8">
             <p className="text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">DBOT Footprint</p>
             <h1 className="text-5xl md:text-6xl font-heading font-bold text-foreground leading-tight">
@@ -38,9 +38,8 @@ export default function ProjectsPage() {
                 <button
                   key={c}
                   onClick={() => setActive(c)}
-                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                    active === c ? "bg-accent text-accent-foreground" : "bg-secondary text-muted-foreground hover:bg-secondary/80"
-                  }`}
+                  className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${active === c ? "bg-accent text-accent-foreground" : "bg-secondary text-muted-foreground hover:bg-secondary/80"
+                    }`}
                 >
                   {c}
                 </button>
